@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ESP32 Noise Detection System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>ESP32 Noise Detection System</h1>
+
+  <!-- Login Section -->
+  <section id="loginSection">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p id="loginMessage"></p>
+  </section>
+
+  <!-- Project Info Section -->
+  <section id="projectInfo" style="display:none;">
+    <h2>About This Project</h2>
+    <p>
+      This system uses an ESP32 microcontroller connected to LM393 sound sensors.  
+      When the classroom noise level goes above a threshold, the ESP32 triggers a buzzer and LED.  
+      At the same time, the ESP32 hosts a web server that records and displays the sound levels.  
+      Teachers can monitor noise in real-time and encourage students to maintain discipline.
+    </p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

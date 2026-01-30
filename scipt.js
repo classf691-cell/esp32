@@ -6,8 +6,8 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
   const password = document.getElementById("password").value;
 
   // Demo credentials (you can change these)
-  const validUser = "teacher";
-  const validPass = "class123";
+  const validUser = "RWPS";
+  const validPass = "BESTCLASS8F";
 
   if (username === validUser && password === validPass) {
     document.getElementById("loginMessage").innerText = "Login successful!";
