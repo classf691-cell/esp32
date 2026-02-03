@@ -8,26 +8,32 @@
 <body>
   <h1>ESP32 Noise Detection System</h1>
 
-  <!-- Login Section -->
-  <section id="loginSection">
-    <h2>Login</h2>
-    <form id="loginForm">
-      <input type="text" id="username" placeholder="Username" required>
-      <input type="password" id="password" placeholder="Password" required>
-      <button type="submit">Login</button>
-    </form>
-    <p id="loginMessage"></p>
-  </section>
-
   <!-- Project Info Section -->
-  <section id="projectInfo" style="display:none;">
+  <section id="projectInfo">
     <h2>About This Project</h2>
     <p>
-      This system uses an ESP32 microcontroller connected to LM393 sound sensors.  
-      When the classroom noise level goes above a threshold, the ESP32 triggers a buzzer and LED.  
-      At the same time, the ESP32 hosts a web server that records and displays the sound levels.  
+      This system uses an <strong>ESP32 microcontroller</strong> connected to 
+      <strong>LM393 sound sensors</strong>. When the classroom noise level goes 
+      above a threshold, the ESP32 triggers a buzzer and LED. At the same time, 
+      the ESP32 hosts a web server that records and displays the sound levels. 
       Teachers can monitor noise in real-time and encourage students to maintain discipline.
     </p>
+
+    <h3>Features</h3>
+    <ul>
+      <li>Detects sound using LM393 sensor</li>
+      <li>Triggers buzzer and LED when noise exceeds threshold</li>
+      <li>ESP32 hosts a web server to show sound levels</li>
+      <li>Useful for classroom monitoring and discipline</li>
+    </ul>
+
+    <h3>Hardware Connections</h3>
+    <ul>
+      <li>LM393 OUT → ESP32 GPIO 15</li>
+      <li>LM393 VCC → 3.3V</li>
+      <li>LM393 GND → GND</li>
+      <li>Buzzer + LED → GPIO pins (configurable)</li>
+    </ul>
   </section>
 
   <script src="script.js"></script>
